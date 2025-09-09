@@ -6,19 +6,19 @@ window.title("BMI Calculator") #uygulamanın üst kısmında adını yazdırır
 window.config(padx=30, pady=30) #açılacak pencerenin boyutu
 
 input_question = tkinter.Label(text="Enter Your Wight(kg)",font=('Arial',10,'normal')) #kullanıcıdan verilerin istenmesi
-input_question.pack(pady=10)
+input_question.pack(pady=5)
 
 input_one = tkinter.Entry(width=10) #kullanıcı girdisi
 input_one.pack()
 
 input_question2 = tkinter.Label(text="Enter Your Height(cm)",font=('Arial',10,'normal')) #kullanıcıdan verilerin istennmesi
-input_question2.pack(pady=10)
+input_question2.pack(pady=5)
 
 input_two = tkinter.Entry(width=10) #kullanıcı girdisi
 input_two.pack()
 
 result_label = tkinter.Label(text="",font=('Arial',10,'normal')) #ekranın altında bmı sonucun, kullanıcı kaynaklı hataların uyarılarının yazılması
-result_label.pack(pady=20)
+result_label.pack()
 
 def calculate_process():
     weight = input_one.get() #işlenecek değerler çağırılır
@@ -62,4 +62,5 @@ calculator_button.pack(pady=10)
 
 
 window.mainloop()
+
 
